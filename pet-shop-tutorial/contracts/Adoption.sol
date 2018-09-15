@@ -20,16 +20,6 @@ contract Staff_checkin {
   This function acts as the setter function for the `adopters` array by changing
   the owner of a pet. */
 
-  function adopt (uint petId) public returns (uint) {
-    // Check if the petId is within bounds. (we only have 16 pets)
-    require(petId >= 0 && petId <= 15);
-
-    /* Set a new address (owner) for the selected pet. `msg.sender` retrieves the
-    address of the person or smart contract that called the function.*/
-    adopters[petId] = msg.sender;
-
-    return petId;
-  }
 
   function checkin (uint staffId) public returns (uint) {
     // Check if the staffId is within bounds. (we only have 10 staff)
