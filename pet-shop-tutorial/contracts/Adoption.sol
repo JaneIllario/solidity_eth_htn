@@ -49,7 +49,7 @@ contract Staff_checkin {
   the `view` function modifier here indicates that the function cannot modify the
   contract's behavior, much like a read-only function.
 
-  Return all adopters
+  Return all staff
   */
 
   function getStaff() public view returns (address[10]) {
